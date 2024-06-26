@@ -1,0 +1,24 @@
+og:
+  description: "I'm a programmer specializing in low-level programming languages, rock climber and language enthusiast."
+  keywords: "developper, programming, climber, languages, computer science, low-level"
+home:
+  og_title: "Home Page"
+  about_title: "Welcome!"
+  about_dev: "I am Tony Guillot, a passionate programmer specializing in low-level programming languages such as C, C++, Assembly, and Rust, constantly striving to push the limits of what's possible with each new project."
+  about_other: "Beyond coding, I'm a rock climber and language enthusiast who always explore new horizons."
+  about_notice: "This site is still in development."
+blog:
+  og_title: "Blog page"
+  title: "Blog page"
+  section_title: "Still in developement"
+  section_paragraph: "But available soon"
+contact:
+  og_title: "Contact page"
+  title: "Contact info"
+  email: "Email"
+  description: "Feel free to get in touch using the appropriate platform"
+  topics:
+    email: Questions & everything else
+    github: Programming
+    linkedin: Professional
+    discord: Casual

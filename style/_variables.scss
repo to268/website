@@ -1,0 +1,22 @@
+$color1: #080708;
+$color2: #dedbd2;
+$color3: #247ba0;
+$color4: #ff7f11;
+$color5: #ff1b1c;
+
+$main-font: Lato;
+
+@mixin hover-animation {
+    overflow: clip;
+    transition: clip-path 250ms ease-in-out;
+    background: linear-gradient(to right, $color4, $color5 50%, $color3 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 250ms ease-in-out;
+    &:hover {
+      background-position: 0 100%;
+    }
+}

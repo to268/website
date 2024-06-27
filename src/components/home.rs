@@ -17,9 +17,9 @@ pub fn HomePage() -> impl IntoView {
                 <p>{t!(i18n, home.about_notice)}</p>
                 <img
                     class=move || "display-img"
-                    src="/assets/img/mountains.jpg"
+                    src="/assets/img/mountains.webp"
                 />
-                <img class=move || "display-img" src="/assets/img/land.jpg"/>
+                <img class=move || "display-img" src="/assets/img/land.webp"/>
             </section>
         </div>
     }

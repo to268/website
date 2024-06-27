@@ -96,29 +96,31 @@
     }
 }
 
-@supports (animation-timeline: view()) {
-    @media (prefers-reduced-motion: no-preference) {
-        #page-container {
-            section {
-                opacity: 0;
-                animation: section-anim 2s linear forwards;
-                animation-timeline: view();
-            }
-        }
-
-        @keyframes section-anim {
-            0% {
-                opacity: 0;
-            }
-            25% {
-                opacity: 1;
-            }
-            75% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-    }
-}
+/* FIXME: There is a bug with SASS that reorder statements in release mode */
+/* that breaks this feature. */
+/* @supports (animation-timeline: view()) { */
+/*     @media (prefers-reduced-motion: no-preference) { */
+/*         #page-container { */
+/*             section { */
+/*                 opacity: 0; */
+/*                 animation: section-anim 2s linear forwards; */
+/*                 animation-timeline: view(); */
+/*             } */
+/*         } */
+/**/
+/*         @keyframes section-anim { */
+/*             0% { */
+/*                 opacity: 0; */
+/*             } */
+/*             25% { */
+/*                 opacity: 1; */
+/*             } */
+/*             75% { */
+/*                 opacity: 1; */
+/*             } */
+/*             100% { */
+/*                 opacity: 0; */
+/*             } */
+/*         } */
+/*     } */
+/* } */

@@ -26,8 +26,16 @@ fn AboutSection() -> impl IntoView {
             <p>{t!(i18n, home.about_dev)}</p>
             <p>{t!(i18n, home.about_other)}</p>
             <h3>{t!(i18n, home.about_notice)}</h3>
-            <img class=move || "display-img" src="/assets/img/mountains.webp" alt={t!(i18n, home.about_mountains_alt)}/>
-            <img class=move || "display-img" src="/assets/img/land.webp" alt={t!(i18n, home.about_land_alt)}/>
+            <img
+                class=move || "display-img"
+                src="/assets/img/mountains.webp"
+                alt=t!(i18n, home.about_mountains_alt)
+            />
+            <img
+                class=move || "display-img"
+                src="/assets/img/land.webp"
+                alt=t!(i18n, home.about_land_alt)
+            />
         </section>
     }
 }
@@ -148,11 +156,18 @@ fn DatabasesTable() -> impl IntoView {
             <tbody>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/postgresql.svg"/>
+                        <img
+                            class=move || "icon"
+                            src="/assets/icons/postgresql.svg"
+                        />
                         <label for="postgresql-bar">"PostgreSQL"</label>
                     </td>
                     <td>
-                        <progress id="postgresql-bar" max="100" value="85"></progress>
+                        <progress
+                            id="postgresql-bar"
+                            max="100"
+                            value="85"
+                        ></progress>
                     </td>
                 </tr>
                 <tr>

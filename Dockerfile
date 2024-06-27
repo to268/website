@@ -31,6 +31,10 @@ ENV RUST_LOG="info"
 ENV LEPTOS_SITE_ADDR "0.0.0.0:3000"
 ENV LEPTOS_SITE_ROOT "/var/www/app/site"
 
+LABEL org.opencontainers.image.source=https://github.com/to268/website
+LABEL org.opencontainers.image.description="My personal website using the Leptos framework in Rust"
+LABEL org.opencontainers.image.licenses=BSD-3-Clause
+
 EXPOSE 3000
 
 CMD ["./website-server"]

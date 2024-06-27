@@ -4,9 +4,17 @@ og:
 home:
   og_title: "Home Page"
   about_title: "Welcome!"
-  about_dev: "I am Tony Guillot, a passionate programmer specializing in low-level programming languages such as C, C++, Assembly, and Rust, constantly striving to push the limits of what's possible with each new project."
+  about_dev: "I am Tony Guillot, a passionate programmer specializing in low-level programming languages such as C, C++, and Rust, constantly striving to push the limits of what's possible with each new project."
   about_other: "Beyond coding, I'm a rock climber and language enthusiast who always explore new horizons."
   about_notice: "This site is still in development."
+  about_mountains_alt: "A dramatic mountain landscape showcasing towering rocky cliffs with lush greenery at their bases. The cliffs form a narrow passageway, creating a striking contrast against the vibrant blue sky filled with fluffy clouds. The dense vegetation in the foreground adds depth to this scenic view."
+  about_land_alt: "A serene lakeside scene featuring calm water, scattered rocks, and a lush forest. The water is gently rippled, and the shoreline is dotted with trees and shrubs. A clear blue sky with wispy clouds enhances the peaceful ambiance of this natural setting."
+  skills_title: "My tech skills"
+  skills_level: "Level"
+  skills_languages: "Programming languages"
+  skills_db: "Databases"
+  skills_os: "Operating Systems"
+  skills_misc: "Miscellaneous"
 blog:
   og_title: "Blog page"
   title: "Blog page"

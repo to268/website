@@ -4,9 +4,17 @@ og:
 home:
   og_title: "Page d'accueil"
   about_title: "Bienvenue !"
-  about_dev: "Je suis Tony Guillot, un programmeur passionné spécialisé dans les langages de programmation bas niveau tels que C, C++, Assembleur et Rust, en poussant les limites de ce qui est possible avec chaque nouveau projet."
+  about_dev: "Je suis Tony Guillot, un programmeur passionné spécialisé dans les langages de programmation bas niveau tels que C, C++, et Rust, en poussant les limites de ce qui est possible avec chaque nouveau projet."
   about_other: "En dehors du dévelopement, je suis un grimpeur et enthousiaste linguistique, qui explore de nouveaux horizons."
   about_notice: "Ce site est encore en développement."
+  about_mountains_alt: "Un paysage de montagne spectaculaire mettant en valeur des falaises rocheuses imposantes avec une végétation luxuriante à leur base. Les falaises forment un passage étroit, créant un contraste saisissant avec le ciel bleu vif rempli de nuages duveteux. La végétation dense au premier plan ajoute de la profondeur à cette vue pittoresque."
+  about_land_alt: "Une scène paisible au bord d'un lac avec de l'eau calme, des rochers épars et une forêt luxuriante. L'eau est légèrement ondulée et le rivage est parsemé d'arbres et d'arbustes. Un ciel bleu clair avec des nuages effilochés rehausse l'atmosphère tranquille de ce cadre naturel."
+  skills_title: "Mes compétences techniques"
+  skills_level: "Niveau"
+  skills_languages: "Langages de programmation"
+  skills_db: "Base de données"
+  skills_os: "Systèmes d'exploitation"
+  skills_misc: "Divers"
 blog:
   og_title: "Page de blog"
   title: "Page de blog"

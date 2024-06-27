@@ -9,11 +9,32 @@
         padding: 1rem;
     }
 
+    .h1-margin {
+        margin-bottom: 25svh;
+    }
+
+
+    h1 {
+        color: $color5;
+    }
+
+    h2 {
+        color: $color4;
+    }
+
+    h3 {
+        color: $color3;
+    }
+
     section {
         align-content: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
         min-height: 78svh;
+
+        h1 {
+            padding: 1rem;
+        }
 
         ul, p {
             margin: 1rem;
@@ -25,6 +46,11 @@
             font-size: large;
         }
 
+        th {
+            padding-bottom: 0.8rem;
+            color: $color4;
+        }
+
         td {
             padding-left: 0.5rem;
             padding-right: 0.5rem;
@@ -34,23 +60,40 @@
             width: 1rem;
             padding-right: 0.2rem;
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-bottom: 30svh;
+        }
+
+        .grid-item {
+            padding: 1rem;
+
+            progress {
+                width: 8vw;
+                height: 1.2rem;
+                border-radius: 10px;
+                overflow: clip;
+                appearance: none;
+                -webkit-appearance: none;
+            }
+
+            progress::-webkit-progress-bar {
+                background-color: #dedbd2;
+            }
+
+            progress::-webkit-progress-value {
+                background-color: #247ba0;
+                border-radius: 10px;
+            }
+
+            progress::-moz-progress-bar {
+                background-color: #247ba0;
+                border-radius: 10px;
+            }
+        }
     }
-}
-
-#skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#skills div {
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    flex: 1 1 auto; /* Adjusts the items to grow and shrink */
 }
 
 @supports (animation-timeline: view()) {

@@ -44,7 +44,6 @@ table {
 }
 
 * {
-    font-family: $main-font;
     background: $color1;
     color: $color2;
     margin: 0;
@@ -53,15 +52,6 @@ table {
 }
 
 a {
-    font-family: $main-font;
     text-decoration: none;
     @include hover-animation;
-}
-
-footer {
-    font-family: $main-font;
-}
-
-h1 {
-  font-size: bold;
 }

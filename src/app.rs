@@ -14,28 +14,28 @@ pub fn App() -> impl IntoView {
     provide_i18n_context();
 
     view! {
-        <Stylesheet id="leptos" href="/pkg/website.css"/>
+        <Stylesheet id="leptos" href="/pkg/website.css" />
         // FIXME: This is a temporary fix to have the scroll on animation working
-        <Stylesheet id="scroll-animation" href="scroll-animation.css"/>
+        <Stylesheet id="scroll-animation" href="scroll-animation.css" />
 
-        <Title text="Tony Guillot"/>
+        <Title text="Tony Guillot" />
 
         <Router fallback=|| {
             let mut outside_errors = Errors::default();
             outside_errors.insert_with_default_key(AppError::NotFound);
-            view! { <ErrorTemplate outside_errors/> }.into_view()
+            view! { <ErrorTemplate outside_errors /> }.into_view()
         }>
-            <NavBar/>
+            <NavBar />
             <main>
                 <Routes>
-                    <Route path="/" view=HomePage/>
-                    <Route path="/blog" view=BlogPage/>
-                    <Route path="/contact" view=ContactPage/>
-                    <RouteEn/>
-                    <RouteFr/>
+                    <Route path="/" view=HomePage />
+                    <Route path="/blog" view=BlogPage />
+                    <Route path="/contact" view=ContactPage />
+                    <RouteEn />
+                    <RouteFr />
                 </Routes>
             </main>
-            <Footer/>
+            <Footer />
         </Router>
     }
 }
@@ -49,7 +49,7 @@ fn RouteEn() -> impl IntoView {
             path="/en"
             view=move || {
                 use_i18n().set_locale(Locale::en);
-                view! { <HomePage/> }
+                view! { <HomePage /> }
             }
         />
     }
@@ -62,7 +62,7 @@ fn RouteFr() -> impl IntoView {
             path="/fr"
             view=move || {
                 use_i18n().set_locale(Locale::fr);
-                view! { <HomePage/> }
+                view! { <HomePage /> }
             }
         />
     }

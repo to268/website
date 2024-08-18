@@ -18,19 +18,19 @@ pub fn OpenGraph(page_title: String) -> impl IntoView {
     let (alternative_locales, _) = create_signal(available_locales);
 
     view! {
-        <Meta property="og:site_name" content="Tony Guillot"/>
-        <Meta property="og:url" content="https://tony-guillot.com"/>
-        <Meta property="og:title" content=page_title/>
-        <Meta property="og:locale" content=main_locale/>
+        <Meta property="og:site_name" content="Tony Guillot" />
+        <Meta property="og:url" content="https://tony-guillot.com" />
+        <Meta property="og:title" content=page_title />
+        <Meta property="og:locale" content=main_locale />
         <For
             each=alternative_locales
             key=|locale| locale.clone()
             let:locale_value
         >
-            <Meta property="og:locale:alternate" content=locale_value/>
+            <Meta property="og:locale:alternate" content=locale_value />
         </For>
 
-        <Meta name="description" content=t!(i18n, og.description)/>
-        <Meta name="keywords" content=t!(i18n, og.keywords)/>
+        <Meta name="description" content=t!(i18n, og.description) />
+        <Meta name="keywords" content=t!(i18n, og.keywords) />
     }
 }

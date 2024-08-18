@@ -7,7 +7,7 @@ pub fn BlogPage() -> impl IntoView {
     let i18n = use_i18n();
 
     view! {
-        <OpenGraph page_title=({ t!(i18n, blog.og_title) })().to_string()/>
+        <OpenGraph page_title=({ t!(i18n, blog.og_title) })().to_string() />
 
         <div id=move || "page-container">
             <h1>{t!(i18n, blog.title)}</h1>

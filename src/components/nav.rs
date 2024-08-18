@@ -17,7 +17,7 @@ pub fn NavBar() -> impl IntoView {
 
             <div id=move || "nav-bar">
                 <nav>
-                    <Links set_show_menu=set_show_menu/>
+                    <Links set_show_menu=set_show_menu />
                 </nav>
             </div>
 
@@ -30,7 +30,7 @@ pub fn NavBar() -> impl IntoView {
                     />
                 </label>
                 <div id=move || "menu-overlay">
-                    <Links set_show_menu=set_show_menu/>
+                    <Links set_show_menu=set_show_menu />
                 </div>
             </div>
         </header>

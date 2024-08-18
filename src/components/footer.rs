@@ -16,7 +16,7 @@ pub fn Footer() -> impl IntoView {
                 "CC BY-NC-SA"
             </A>
             <span class=move || "copyright">"Tony Guillot"</span>
-            <SelectLang/>
+            <SelectLang />
         </footer>
     }
 }
@@ -47,7 +47,7 @@ fn SelectLang() -> impl IntoView {
             {lang_pairs
                 .into_iter()
                 .map(|pair| {
-                    view! { <SelectOption value is=pair.0 name=pair.1/> }
+                    view! { <SelectOption value is=pair.0 name=pair.1 /> }
                 })
                 .collect_view()}
         </select>

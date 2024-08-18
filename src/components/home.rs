@@ -7,11 +7,11 @@ pub fn HomePage() -> impl IntoView {
     let i18n = use_i18n();
 
     view! {
-        <OpenGraph page_title=({ t!(i18n, home.og_title) })().to_string()/>
+        <OpenGraph page_title=({ t!(i18n, home.og_title) })().to_string() />
 
         <div id=move || "page-container">
-            <AboutSection/>
-            <SkillsSection/>
+            <AboutSection />
+            <SkillsSection />
         </div>
     }
 }
@@ -48,10 +48,10 @@ fn SkillsSection() -> impl IntoView {
         <section>
             <h1 class=move || "h1-margin">{t!(i18n, home.skills_title)}</h1>
             <div class=move || "grid-container">
-                <ProgrammingLanguagesTable/>
-                <DatabasesTable/>
-                <OperatingSystemsTable/>
-                <MiscTable/>
+                <ProgrammingLanguagesTable />
+                <DatabasesTable />
+                <OperatingSystemsTable />
+                <MiscTable />
             </div>
         </section>
     }
@@ -72,7 +72,7 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
             <tbody>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/c.svg"/>
+                        <img class=move || "icon" src="/assets/icons/c.svg" />
                         <label for="c-bar">"C"</label>
                     </td>
                     <td>
@@ -81,7 +81,7 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/lua.svg"/>
+                        <img class=move || "icon" src="/assets/icons/lua.svg" />
                         <label for="lua-bar">"Lua"</label>
                     </td>
                     <td>
@@ -90,7 +90,7 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/rust.svg"/>
+                        <img class=move || "icon" src="/assets/icons/rust.svg" />
                         <label for="rust-bar">"Rust"</label>
                     </td>
                     <td>
@@ -99,7 +99,7 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/python.svg"/>
+                        <img class=move || "icon" src="/assets/icons/python.svg" />
                         <label for="py-bar">"Python"</label>
                     </td>
                     <td>
@@ -120,7 +120,7 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/java.svg"/>
+                        <img class=move || "icon" src="/assets/icons/java.svg" />
                         <label for="java-bar">"Java"</label>
                     </td>
                     <td>
@@ -129,7 +129,7 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/csharp.svg"/>
+                        <img class=move || "icon" src="/assets/icons/csharp.svg" />
                         <label for="cs-bar">"C#"</label>
                     </td>
                     <td>
@@ -172,7 +172,7 @@ fn DatabasesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/mongodb.svg"/>
+                        <img class=move || "icon" src="/assets/icons/mongodb.svg" />
                         <label for="mongodb-bar">"MongoDB"</label>
                     </td>
                     <td>
@@ -181,7 +181,10 @@ fn DatabasesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/database.svg"/>
+                        <img
+                            class=move || "icon"
+                            src="/assets/icons/database.svg"
+                        />
                         <label for="questdb-bar">"QuestDB"</label>
                     </td>
                     <td>
@@ -208,7 +211,7 @@ fn OperatingSystemsTable() -> impl IntoView {
             <tbody>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/linux.svg"/>
+                        <img class=move || "icon" src="/assets/icons/linux.svg" />
                         <label for="linux-bar">"GNU/Linux"</label>
                     </td>
                     <td>
@@ -217,7 +220,7 @@ fn OperatingSystemsTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/freebsd.svg"/>
+                        <img class=move || "icon" src="/assets/icons/freebsd.svg" />
                         <label for="freebsd-bar">"FreeBSD"</label>
                     </td>
                     <td>
@@ -226,7 +229,7 @@ fn OperatingSystemsTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/windows.svg"/>
+                        <img class=move || "icon" src="/assets/icons/windows.svg" />
                         <label for="windows-bar">"Windows"</label>
                     </td>
                     <td>
@@ -253,7 +256,7 @@ fn MiscTable() -> impl IntoView {
             <tbody>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/neovim.svg"/>
+                        <img class=move || "icon" src="/assets/icons/neovim.svg" />
                         <label for="nvim-bar">"Neovim"</label>
                     </td>
                     <td>
@@ -262,7 +265,7 @@ fn MiscTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/git.svg"/>
+                        <img class=move || "icon" src="/assets/icons/git.svg" />
                         <label for="git-bar">"Git"</label>
                     </td>
                     <td>
@@ -271,7 +274,7 @@ fn MiscTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/docker.svg"/>
+                        <img class=move || "icon" src="/assets/icons/docker.svg" />
                         <label for="docker-bar">"Docker"</label>
                     </td>
                     <td>

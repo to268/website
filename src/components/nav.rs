@@ -1,16 +1,18 @@
-use leptos::*;
-use leptos_router::A;
+use leptos::prelude::*;
+use leptos_router::components::A;
 
 #[component]
 pub fn NavBar() -> impl IntoView {
-    let (show_menu, set_show_menu) = create_signal(false);
+    let (show_menu, set_show_menu) = signal(false);
     let toggle_menu = move |_| set_show_menu.update(|val| *val = !*val);
     let close_menu = move |_| set_show_menu.update(|val| *val = false);
 
     view! {
         <header>
             <h2>
-                <A href="" class=move || "name nav-item" on:click=close_menu>
+                <A
+                href=""
+                on:click=close_menu>
                     "Tony Guillot"
                 </A>
             </h2>
@@ -42,10 +44,14 @@ fn Links(set_show_menu: WriteSignal<bool>) -> impl IntoView {
     let close_menu = move |_| set_show_menu.update(|val| *val = false);
 
     view! {
-        <A href="blog" class=move || "nav-item" on:click=close_menu>
+        <A href="blog"
+        prop:class=move || "nav-item"
+        on:click=close_menu>
             "Blog"
         </A>
-        <A href="contact" class=move || "nav-item" on:click=close_menu>
+        <A href="contact"
+        prop:class=move || "nav-item"
+        on:click=close_menu>
             "Contact"
         </A>
     }

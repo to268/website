@@ -1,7 +1,7 @@
 use crate::i18n::*;
-use leptos::*;
+use leptos::prelude::*;
 use leptos_i18n::Locale;
-use leptos_meta::*;
+use leptos_meta::Meta;
 
 #[component]
 pub fn OpenGraph(page_title: String) -> impl IntoView {
@@ -15,22 +15,25 @@ pub fn OpenGraph(page_title: String) -> impl IntoView {
         "fr" => available_locales.remove(1),
         _ => available_locales.remove(0),
     };
-    let (alternative_locales, _) = create_signal(available_locales);
+    let (alternative_locales, _) = signal(available_locales);
+
+    let description = t!(i18n, og.description).to_html();
+    let keywords = t!(i18n, og.keywords).to_html();
 
     view! {
+        <Meta name="description" content=description />
+        <Meta name="keywords" content=keywords />
+
         <Meta property="og:site_name" content="Tony Guillot" />
         <Meta property="og:url" content="https://tony-guillot.com" />
-        <Meta property="og:title" content=page_title />
-        <Meta property="og:locale" content=main_locale />
+        <Meta property="og:title" content={page_title} />
+        <Meta property="og:locale" content={main_locale} />
         <For
             each=alternative_locales
             key=|locale| locale.clone()
             let:locale_value
         >
-            <Meta property="og:locale:alternate" content=locale_value />
+            <Meta property="og:locale:alternate" content={locale_value} />
         </For>
-
-        <Meta name="description" content=t!(i18n, og.description) />
-        <Meta name="keywords" content=t!(i18n, og.keywords) />
     }
 }

@@ -1,13 +1,13 @@
 use crate::components::opengraph::OpenGraph;
 use crate::i18n::*;
-use leptos::*;
+use leptos::prelude::*;
 
 #[component]
 pub fn HomePage() -> impl IntoView {
     let i18n = use_i18n();
 
     view! {
-        <OpenGraph page_title=({ t!(i18n, home.og_title) })().to_string() />
+        <OpenGraph page_title=({ t!(i18n, home.og_title) })().to_html() />
 
         <div id=move || "page-container">
             <AboutSection />
@@ -20,6 +20,9 @@ pub fn HomePage() -> impl IntoView {
 fn AboutSection() -> impl IntoView {
     let i18n = use_i18n();
 
+    let mountains_alt = {t!(i18n, home.about_mountains_alt)}.to_html();
+    let land_alt = {t!(i18n, home.about_land_alt)}.to_html();
+
     view! {
         <section>
             <h1>{t!(i18n, home.about_title)}</h1>
@@ -29,12 +32,12 @@ fn AboutSection() -> impl IntoView {
             <img
                 class=move || "display-img"
                 src="/assets/img/mountains.webp"
-                alt=t!(i18n, home.about_mountains_alt)
+                alt={mountains_alt}
             />
             <img
                 class=move || "display-img"
                 src="/assets/img/land.webp"
-                alt=t!(i18n, home.about_land_alt)
+                alt={land_alt}
             />
         </section>
     }

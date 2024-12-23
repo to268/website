@@ -11,32 +11,34 @@ codegen-units = 1
 lto = true
 opt-level = 3
 
+# Too much debug info to embed
+[profile.dev]
+strip = "debuginfo"
+
 [dependencies]
-axum = { version = "0.7.5", optional = true }
+axum = { version = "0.7.9", optional = true }
 console_error_panic_hook = "0.1.7"
 console_log = "1"
 cfg-if = "1"
-leptos = { version = "0.6.14", features = ["nightly"] }
-leptos_axum = { version = "0.6.14", optional = true }
-leptos_meta = { version = "0.6.14", features = ["nightly"] }
-leptos_router = { version = "0.6.14", features = ["nightly"] }
-leptos_i18n = { version = "0.3.3", default-features = false, features = ["cookie", "nightly", "yaml_files"] }
+leptos = { version = "0.7.2", features = ["nightly"] }
+leptos_router = { version = "0.7.2", features = ["nightly"] }
+leptos_axum = { version = "0.7.2", optional = true }
+leptos_meta = { version = "0.7.2" }
+leptos_i18n = { version = "0.5.2", default-features = false, features = ["cookie", "nightly", "yaml_files"] }
+leptos_i18n_router = { version = "0.5.2" }
 log = "0.4.22"
 simple_logger = "5.0.0"
-tokio = { version = "1.39.3", features = ["full"], optional = true }
-tower = { version = "0.5.0", features = ["util"], optional = true }
-tower-http = { version = "0.5.2", features = ["full"], optional = true }
-wasm-bindgen = "=0.2.93"
-thiserror = "1.0.63"
-tracing = { version = "0.1.40", optional = true }
-http = "1.1.0"
+tokio = { version = "1.42.0", features = ["full"], optional = true }
+tower = { version = "0.5.2", features = ["util"], optional = true }
+tower-http = { version = "0.6.2", features = ["full"], optional = true }
+wasm-bindgen = "=0.2.99"
+thiserror = "2.0.9"
+http = "1.2.0"
 
 [features]
 hydrate = [
     "leptos/hydrate",
-    "leptos_meta/hydrate",
     "leptos_i18n/hydrate",
-    "leptos_router/hydrate"
 ]
 ssr = [
     "dep:axum",
@@ -48,7 +50,7 @@ ssr = [
     "leptos_meta/ssr",
     "leptos_router/ssr",
     "leptos_i18n/axum",
-    "dep:tracing",
+    "leptos_i18n_router/ssr",
 ]
 
 # Defines a size-optimized profile for the WASM bundle in release mode

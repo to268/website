@@ -1,20 +1,20 @@
 use core::panic;
 
 use crate::i18n::*;
-use leptos::*;
-use leptos_i18n::Locale;
-use leptos_router::A;
+use leptos::prelude::*;
+//use leptos_i18n::Locale;
 
 #[component]
 pub fn Footer() -> impl IntoView {
     view! {
         <footer>
-            <A
+            <a
+                rel="external"
                 class=move || "copyright"
                 href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
             >
                 "CC BY-NC-SA"
-            </A>
+            </a>
             <span class=move || "copyright">"Tony Guillot"</span>
             <SelectLang />
         </footer>
@@ -26,15 +26,13 @@ fn SelectLang() -> impl IntoView {
     let i18n = use_i18n();
 
     let locale_str = i18n.get_locale().as_str();
-    let (value, set_value) = create_signal(locale_str.to_string());
+    let (value, set_value) = signal(locale_str.to_string());
 
     let changed_select = move |ev| {
         let new_value = event_target_value(&ev);
 
-        match Locale::from_str(&new_value) {
-            Some(locale) => i18n.set_locale(locale),
-            None => panic!("Not supported language"),
-        }
+        let new_locale = Locale::find_locale(&[&new_value]);
+        i18n.set_locale(new_locale);
 
         set_value(new_value);
     };

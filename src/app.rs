@@ -3,13 +3,13 @@ use crate::components::{
     nav::NavBar,
 };
 use crate::i18n::{I18nContextProvider, Locale};
-use leptos_i18n_router::I18nRoute;
 use leptos::prelude::*;
+use leptos_i18n_router::I18nRoute;
 use leptos_meta::{provide_meta_context, MetaTags, Stylesheet, Title};
 use leptos_router::{
     components::{Route, Router, Routes},
     nested_router::Outlet,
-    path
+    path,
 };
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
@@ -17,14 +17,17 @@ pub fn shell(options: LeptosOptions) -> impl IntoView {
         <!DOCTYPE html>
         <html lang="en">
             <head>
-                <meta charset="utf-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta charset="utf-8" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"
+                />
                 <AutoReload options=options.clone() />
-                <HydrationScripts options/>
-                <MetaTags/>
+                <HydrationScripts options />
+                <MetaTags />
             </head>
             <body>
-                <App/>
+                <App />
             </body>
         </html>
     }

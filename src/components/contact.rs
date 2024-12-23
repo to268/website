@@ -17,14 +17,18 @@ pub fn ContactPage() -> impl IntoView {
                     <tr>
                         <td>
                             <img class=move || "icon" src="/assets/icons/email.svg" />
-                            <a rel="external" href="mailto:tony-guillot@protonmail.com">"Email"</a>
+                            <a rel="external" href="mailto:tony-guillot@protonmail.com">
+                                "Email"
+                            </a>
                         </td>
                         <td>{t!(i18n, contact.topics.email)}</td>
                     </tr>
                     <tr>
                         <td>
                             <img class=move || "icon" src="/assets/icons/github.svg" />
-                            <a rel="external" href="https://github.com/to268">"GitHub"</a>
+                            <a rel="external" href="https://github.com/to268">
+                                "GitHub"
+                            </a>
                         </td>
                         <td>{t!(i18n, contact.topics.github)}</td>
                     </tr>
@@ -34,7 +38,10 @@ pub fn ContactPage() -> impl IntoView {
                                 class=move || "icon"
                                 src="/assets/icons/linkedin.svg"
                             />
-                            <a rel="external" href="https://www.linkedin.com/in/tony-guillot">
+                            <a
+                                rel="external"
+                                href="https://www.linkedin.com/in/tony-guillot"
+                            >
                                 "LinkedIn"
                             </a>
                         </td>
@@ -43,7 +50,10 @@ pub fn ContactPage() -> impl IntoView {
                     <tr>
                         <td>
                             <img class=move || "icon" src="/assets/icons/discord.svg" />
-                            <a rel="external" href="https://discordapp.com/users/357223651327868930">
+                            <a
+                                rel="external"
+                                href="https://discordapp.com/users/357223651327868930"
+                            >
                                 "Discord"
                             </a>
                         </td>

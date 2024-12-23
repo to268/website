@@ -2,7 +2,6 @@ use core::panic;
 
 use crate::i18n::*;
 use leptos::prelude::*;
-//use leptos_i18n::Locale;
 
 #[component]
 pub fn Footer() -> impl IntoView {

@@ -4,8 +4,8 @@
 async fn main() {
     use axum::Router;
     use leptos::prelude::*;
-    use tower_http::trace::TraceLayer;
     use leptos_axum::{generate_route_list, LeptosRoutes};
+    use tower_http::trace::TraceLayer;
     use website::app::*;
 
     website::logger::init();

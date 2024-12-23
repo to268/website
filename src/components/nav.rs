@@ -10,9 +10,7 @@ pub fn NavBar() -> impl IntoView {
     view! {
         <header>
             <h2>
-                <A
-                href=""
-                on:click=close_menu>
+                <A href="" on:click=close_menu>
                     "Tony Guillot"
                 </A>
             </h2>
@@ -44,14 +42,10 @@ fn Links(set_show_menu: WriteSignal<bool>) -> impl IntoView {
     let close_menu = move |_| set_show_menu.update(|val| *val = false);
 
     view! {
-        <A href="blog"
-        prop:class=move || "nav-item"
-        on:click=close_menu>
+        <A href="blog" prop:class=move || "nav-item" on:click=close_menu>
             "Blog"
         </A>
-        <A href="contact"
-        prop:class=move || "nav-item"
-        on:click=close_menu>
+        <A href="contact" prop:class=move || "nav-item" on:click=close_menu>
             "Contact"
         </A>
     }

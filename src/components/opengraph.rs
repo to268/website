@@ -26,14 +26,14 @@ pub fn OpenGraph(page_title: String) -> impl IntoView {
 
         <Meta property="og:site_name" content="Tony Guillot" />
         <Meta property="og:url" content="https://tony-guillot.com" />
-        <Meta property="og:title" content={page_title} />
-        <Meta property="og:locale" content={main_locale} />
+        <Meta property="og:title" content=page_title />
+        <Meta property="og:locale" content=main_locale />
         <For
             each=alternative_locales
             key=|locale| locale.clone()
             let:locale_value
         >
-            <Meta property="og:locale:alternate" content={locale_value} />
+            <Meta property="og:locale:alternate" content=locale_value />
         </For>
     }
 }

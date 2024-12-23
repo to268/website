@@ -20,8 +20,8 @@ pub fn HomePage() -> impl IntoView {
 fn AboutSection() -> impl IntoView {
     let i18n = use_i18n();
 
-    let mountains_alt = {t!(i18n, home.about_mountains_alt)}.to_html();
-    let land_alt = {t!(i18n, home.about_land_alt)}.to_html();
+    let mountains_alt = { t!(i18n, home.about_mountains_alt) }.to_html();
+    let land_alt = { t!(i18n, home.about_land_alt) }.to_html();
 
     view! {
         <section>
@@ -32,12 +32,12 @@ fn AboutSection() -> impl IntoView {
             <img
                 class=move || "display-img"
                 src="/assets/img/mountains.webp"
-                alt={mountains_alt}
+                alt=mountains_alt
             />
             <img
                 class=move || "display-img"
                 src="/assets/img/land.webp"
-                alt={land_alt}
+                alt=land_alt
             />
         </section>
     }

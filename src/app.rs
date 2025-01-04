@@ -1,6 +1,6 @@
 use crate::components::{
     blog::BlogPage, contact::ContactPage, footer::Footer, home::HomePage,
-    nav::NavBar,
+    nav::NavBar, not_found::NotFound,
 };
 use crate::i18n::{I18nContextProvider, Locale};
 use leptos::prelude::*;
@@ -48,7 +48,7 @@ pub fn App() -> impl IntoView {
             <Router>
                 <NavBar />
                 <main>
-                    <Routes fallback=|| "Page not found.".into_view()>
+                    <Routes fallback=|| NotFound>
                         <I18nRoute<Locale, _, _> view=Outlet>
                             <Route path=path!("") view=HomePage />
                             <Route path=path!("blog") view=BlogPage />

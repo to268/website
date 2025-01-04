@@ -24,9 +24,11 @@ contact:
   og_title: "Contact page"
   title: "Contact info"
   email: "Email"
-  description: "Feel free to get in touch using the appropriate platform"
+  description: "Feel free to get in touch using the appropriate/desired platform."
   topics:
     email: Questions & everything else
     github: Programming
     linkedin: Professional
+    simplex: Confidential communication
+    nostr: Microblogging
     discord: Casual

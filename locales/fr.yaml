@@ -24,9 +24,11 @@ contact:
   og_title: "Page de contact"
   title: "Informations de contact"
   email: "Mail"
-  description: "Vous pouvez me contacter sur la plateforme appropriée"
+  description: "Vous pouvez me contacter sur la plateforme appropriée/souhaitée."
   topics:
     email: Questions & le reste
     github: Programmation
     linkedin: Professionnel
+    simplex: Communication confidentielle
+    nostr: Microblogage
     discord: Informel

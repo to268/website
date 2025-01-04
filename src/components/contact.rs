@@ -49,6 +49,27 @@ pub fn ContactPage() -> impl IntoView {
                     </tr>
                     <tr>
                         <td>
+                            <img class=move || "icon" src="/assets/icons/simplex.svg" />
+                            <a
+                                rel="external"
+                                href="https://simplex.chat/contact#/?v=2-7&smp=smp%3A%2F%2Fhejn2gVIqNU6xjtGM3OwQeuk8ZEbDXVJXAlnSBJBWUA%3D%40smp16.simplex.im%2FY4Z60fYUuVStajxzTnfY-rPlCOa7O-c_%23%2F%3Fv%3D1-3%26dh%3DMCowBQYDK2VuAyEAsQ8nWLl7S94IBLBK1HV6cCrIPRnhoHBLGOVOD4Z1gTA%253D%26srv%3Dp3ktngodzi6qrf7w64mmde3syuzrv57y55hxabqcq3l5p6oi7yzze6qd.onion"
+                            >
+                                "SimpleX Chat"
+                            </a>
+                        </td>
+                        <td>{t!(i18n, contact.topics.simplex)}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class=move || "icon" src="/assets/icons/nostr.svg" />
+                            <a rel="external" href="https://iris.to/tonyguillot">
+                                "Nostr"
+                            </a>
+                        </td>
+                        <td>{t!(i18n, contact.topics.nostr)}</td>
+                    </tr>
+                    <tr>
+                        <td>
                             <img class=move || "icon" src="/assets/icons/discord.svg" />
                             <a
                                 rel="external"

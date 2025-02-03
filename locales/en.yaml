@@ -1,3 +1,5 @@
+not_found:
+  title: "Page not found"
 og:
   description: "I'm a programmer specializing in low-level programming languages, rock climber and language enthusiast."
   keywords: "developper, programming, climber, languages, computer science, low-level"

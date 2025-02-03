@@ -84,11 +84,14 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img class=move || "icon" src="/assets/icons/lua.svg" />
-                        <label for="lua-bar">"Lua"</label>
+                        <img
+                            class=move || "icon"
+                            src="/assets/icons/cplusplus.svg"
+                        />
+                        <label for="cpp-bar">"C++"</label>
                     </td>
                     <td>
-                        <progress id="lua-bar" max="100" value="85"></progress>
+                        <progress id="cpp-bar" max="100" value="85"></progress>
                     </td>
                 </tr>
                 <tr>
@@ -97,7 +100,16 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                         <label for="rust-bar">"Rust"</label>
                     </td>
                     <td>
-                        <progress id="rust-bar" max="100" value="80"></progress>
+                        <progress id="rust-bar" max="100" value="82"></progress>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class=move || "icon" src="/assets/icons/lua.svg" />
+                        <label for="lua-bar">"Lua"</label>
+                    </td>
+                    <td>
+                        <progress id="lua-bar" max="100" value="80"></progress>
                     </td>
                 </tr>
                 <tr>
@@ -111,23 +123,11 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                 </tr>
                 <tr>
                     <td>
-                        <img
-                            class=move || "icon"
-                            src="/assets/icons/cplusplus.svg"
-                        />
-                        <label for="cpp-bar">"C++"</label>
-                    </td>
-                    <td>
-                        <progress id="cpp-bar" max="100" value="76"></progress>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <img class=move || "icon" src="/assets/icons/java.svg" />
                         <label for="java-bar">"Java"</label>
                     </td>
                     <td>
-                        <progress id="java-bar" max="100" value="72"></progress>
+                        <progress id="java-bar" max="100" value="75"></progress>
                     </td>
                 </tr>
                 <tr>
@@ -136,7 +136,7 @@ fn ProgrammingLanguagesTable() -> impl IntoView {
                         <label for="cs-bar">"C#"</label>
                     </td>
                     <td>
-                        <progress id="cs-bar" max="100" value="70"></progress>
+                        <progress id="cs-bar" max="100" value="72"></progress>
                     </td>
                 </tr>
             </tbody>
@@ -179,7 +179,7 @@ fn DatabasesTable() -> impl IntoView {
                         <label for="mongodb-bar">"MongoDB"</label>
                     </td>
                     <td>
-                        <progress id="mongodb-bar" max="100" value="75"></progress>
+                        <progress id="mongodb-bar" max="100" value="80"></progress>
                     </td>
                 </tr>
                 <tr>
@@ -191,7 +191,7 @@ fn DatabasesTable() -> impl IntoView {
                         <label for="questdb-bar">"QuestDB"</label>
                     </td>
                     <td>
-                        <progress id="questdb-bar" max="100" value="70"></progress>
+                        <progress id="questdb-bar" max="100" value="75"></progress>
                     </td>
                 </tr>
             </tbody>
@@ -227,7 +227,7 @@ fn OperatingSystemsTable() -> impl IntoView {
                         <label for="freebsd-bar">"FreeBSD"</label>
                     </td>
                     <td>
-                        <progress id="freebsd-bar" max="100" value="82"></progress>
+                        <progress id="freebsd-bar" max="100" value="85"></progress>
                     </td>
                 </tr>
                 <tr>
@@ -281,7 +281,7 @@ fn MiscTable() -> impl IntoView {
                         <label for="docker-bar">"Docker"</label>
                     </td>
                     <td>
-                        <progress id="docker-bar" max="100" value="80"></progress>
+                        <progress id="docker-bar" max="100" value="82"></progress>
                     </td>
                 </tr>
             </tbody>

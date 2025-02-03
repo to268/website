@@ -1,3 +1,5 @@
+not_found:
+  title: "La page est introuvable"
 og:
   description: "Je suis un programmeur spécialisé dans les langages de programmation bas niveau, mais également un grimpeur et enthousiaste linguistique."
   keywords: "développeur, programmation, grimpeur, langages, informatique, bas-niveau"

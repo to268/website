@@ -20,13 +20,13 @@ axum = { version = "0.7.9", optional = true }
 console_error_panic_hook = "0.1.7"
 console_log = "1"
 cfg-if = "1"
-leptos = { version = "0.7.5", features = ["nightly"] }
-leptos_router = { version = "0.7.5", features = ["nightly"] }
-leptos_axum = { version = "0.7.5", optional = true }
-leptos_meta = { version = "0.7.5" }
-leptos_i18n = { version = "0.5.5", default-features = false, features = ["cookie", "nightly", "yaml_files"] }
-leptos_i18n_router = { version = "0.5.5" }
-log = "0.4.25"
+leptos = { version = "0.7.7", features = ["nightly"] }
+leptos_router = { version = "0.7.7", features = ["nightly"] }
+leptos_axum = { version = "0.7.7", optional = true }
+leptos_meta = { version = "0.7.7" }
+leptos_i18n = { version = "0.5.7", default-features = false, features = ["cookie", "nightly", "yaml_files"] }
+leptos_i18n_router = { version = "0.5.7" }
+log = "0.4.26"
 simple_logger = "5.0.0"
 tokio = { version = "1.43.0", features = ["full"], optional = true }
 tower = { version = "0.5.2", features = ["util"], optional = true }

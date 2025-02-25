@@ -1,1 +1,0 @@
-@supports (animation-timeline:view()){@media (prefers-reduced-motion:no-preference){#page-container section{opacity:0;animation:2s linear forwards section-anim;animation-timeline:view()}@keyframes section-anim{0%,100%{opacity:0}25%,75%{opacity:1}}}}

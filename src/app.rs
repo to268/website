@@ -39,8 +39,6 @@ pub fn App() -> impl IntoView {
 
     view! {
         <Stylesheet id="leptos" href="/pkg/website.css" />
-        // FIXME: This is a temporary fix to have the scroll on animation working
-        <Stylesheet id="scroll-animation" href="scroll-animation.css" />
 
         <Title text="Tony Guillot" />
 
